@@ -1,0 +1,92 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+  min-height: 100vh;
+  position: relative;
+}
+
+.box {
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+
+}
+
+input {
+  width: 25rem;
+  height: 2.5rem;
+  padding: 1.5rem 3rem 1.5rem 1.2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: rgb(58, 57, 57);
+  background-color: #fff;
+  background-image: none;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+}
+input,
+input:focus,
+input:active,
+input:active:focus {
+  border: none;
+  outline: none;
+  box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.05);
+}
+.btn-add{
+  padding: .85rem 1.03rem;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+  margin-left: -50px;
+  pointer-events: auto;
+}
+
+.div-list{
+  box-sizing: border-box;
+    background: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    width: 25rem;
+    word-break: break-word;
+    background: rgb(102, 18, 199);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+}
+.div-list:hover{
+  background-color: transparent;
+  box-shadow: 1px 0px 5px 2px rgba(102, 18, 199, 1);
+  color:rgb(102, 18, 199)
+}
+.list-btn {
+  width: 5rem;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.fa-trash-alt,
+.fa-edit {
+  line-height: 100%;
+  padding: 10px;
+}
+.btn-add,
+.div-list:hover .fa-edit {
+  cursor: pointer;
+  color: #2FD67A;
+}
+.div-list:hover .fa-trash-alt {
+  cursor: pointer;
+  color: #f313139f;
+}
+.fa-edit:hover, .fa-trash-alt:hover{
+  margin-top: 1px;
+}
